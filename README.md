@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#To clone, build and run insecure branch
 
-Things you may want to cover:
+git clone git@github.com:DylanBrennan92/sapProject.git 
 
-* Ruby version
+cd sapProject/
 
-* System dependencies
+git checkout remotes/origin/insecure
 
-* Configuration
+rake db:create
 
-* Database creation
+rake db:migrate
 
-* Database initialization
+rails s
 
-* How to run the test suite
+#########################################################
+#To run secure branch
 
-* Services (job queues, cache servers, search engines, etc.)
+git clean  -d  -f .
 
-* Deployment instructions
+git checkout remotes/origin/secure
 
-* ...
+rake db:create
+
+rake db:migrate
+
+rails s
