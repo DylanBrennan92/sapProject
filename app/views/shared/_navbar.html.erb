@@ -1,0 +1,29 @@
+<nav class="navbar justify-content-center" style="background-color: #e3f2fd;">
+  <!-- Navbar content -->
+<ul class="nav">
+  <li class="nav-item">
+    <%= link_to "Home", root_path, class: "nav-link"%>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">WorkLog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">User Guide</a>
+  </li>
+  
+   <li class="nav-item">
+    <a class="nav-link " href="#">Logged in as</a>
+  </li>
+   <li class="nav-item">
+   <%= button_to "Logout", root_path, method: :delete, class:"btn btn-outline-dark" %>
+  </li>
+  
+  <li class="nav-item">
+    <%= link_to "Register", root_path, class: "nav-link"%>
+  </li>
+    <li class="nav-item">
+    <%= link_to "Login", root_path, class: "nav-link"%>
+  </li>
+  
+</ul>
+</nav>
