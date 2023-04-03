@@ -27,6 +27,7 @@
         <%= form.label :password_confirmation%>
         <%= form.text_field :password_confirmation, class: "form-control"  %>
     </div>
+    <%= form.hidden_field :role, value: "staff"%>
     <div class="mb-3" data-turbo="false">
         <%= form.submit "Create account", class:"btn btn-outline-primary"%>
     </div>
